@@ -1,0 +1,13 @@
+
+body { direction: rtl; unicode-bidi: embed; }
+
+.site-logo { text-align: right; }
+.site-title { text-align: right; }
+.site-description { text-align: right; }
+
+#footer .copyright { float: right; }
+#footer .poweredby { float: left; }
+
+.post-title { text-align: right; }
+.post-meta { text-align: right; }
+

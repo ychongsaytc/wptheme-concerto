@@ -1,4 +1,3 @@
-<?php global $concerto_options; ?>
 
 			<div class="clearfix"></div>
 
@@ -8,9 +7,9 @@
 
 	<div id="footer">
 		<footer id="footer-inner" class="inner">
-			<span class="copyright"><?php if( ! empty( $concerto_options['code_siteinfo'] ) ) : echo html_entity_decode( $concerto_options['code_siteinfo'] ); else : ?>&copy; <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>.<?php endif; ?></span>
+			<span class="copyright"><?php $nlt_code_siteinfo = nlt_opt('code_siteinfo'); if( ! empty( $nlt_code_siteinfo ) ) : echo html_entity_decode( $nlt_code_siteinfo ); else : ?>&copy; <a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>.<?php endif; ?></span>
 			<span class="poweredby">
-				<?php _e( 'Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>. Concerto by <a href="http://www.ychong.com/" title="Neverland">Neverland</a>.', 'concerto' ); ?>
+				<?php _e( 'Powered by <a href="http://wordpress.org/" target="_blank">WordPress</a>. Concerto Theme by <a href="http://www.ychong.com/" title="Neverland" target="_blank">Neverland</a>.', 'nlt' ); ?>
 			</span>
 			<div class="clearfix"></div>
 		</footer><!-- #footer-inner -->

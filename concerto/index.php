@@ -1,5 +1,3 @@
-<?php global $concerto_options; ?>
-
 <?php get_header(); ?>
 
 <section id="primary">
@@ -7,29 +5,29 @@
 <?php if( is_archive() || is_search() ) : ?>
 	<div class="page-meta">
 	<?php if( is_category() ) : ?>
-		<?php printf( __( 'Category Archives: %s', 'concerto' ), '<span>'.single_cat_title( '', false ) . '</span>' ); ?>
+		<?php printf( __( 'Category Archives: %s', 'nlt' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
 		<?php
 			$category_description = category_description();
 			if ( ! empty( $category_description ) ) printf( '<p>%s</p>', $category_description );
 		?>
 	<?php elseif( is_tag() ) : ?>
-		<?php printf( __( 'Tag Archives: %s', 'concerto' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?>
+		<?php printf( __( 'Tag Archives: %s', 'nlt' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?>
 		<?php
 			$tag_description = tag_description();
 			if ( ! empty( $tag_description ) ) printf( '<p>%s</p>', $tag_description );
 		?>
 	<?php elseif( is_author() ) : ?>
-		<?php printf( __( 'Author Archives: %s', 'concerto' ), '<span>' . get_the_author_meta( 'display_name', get_query_var( 'author' ) ) . '</span>' ); ?>
+		<?php printf( __( 'Author Archives: %s', 'nlt' ), '<span>' . get_the_author_meta( 'display_name', get_query_var( 'author' ) ) . '</span>' ); ?>
 	<?php elseif( is_search() ) : ?>
-		<?php printf( __( 'Search Results for: %s', 'concerto' ), '<span>' . get_search_query() . '</span>' ); ?>
+		<?php printf( __( 'Search Results for: %s', 'nlt' ), '<span>' . get_search_query() . '</span>' ); ?>
 	<?php elseif( is_day() ) : ?>
-		<?php printf( __( 'Daily Archives: %s', 'concerto' ), '<span>' . get_the_date() . '</span>' ); ?>
+		<?php printf( __( 'Daily Archives: %s', 'nlt' ), '<span>' . get_the_date() . '</span>' ); ?>
 	<?php elseif( is_month() ) : ?>
-		<?php printf( __( 'Monthly Archives: %s', 'concerto' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
+		<?php printf( __( 'Monthly Archives: %s', 'nlt' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
 	<?php elseif( is_year() ) : ?>
-		<?php printf( __( 'Yearly Archives: %s', 'concerto' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
+		<?php printf( __( 'Yearly Archives: %s', 'nlt' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
 	<?php else : ?>
-		<?php printf( __( 'Blog Archives', 'concerto' ) ); ?>
+		<?php printf( __( 'Blog Archives', 'nlt' ) ); ?>
 	<?php endif; ?>
 		<div class="clearfix"></div>
 	</div><!-- .page-meta -->
@@ -49,9 +47,9 @@
 
 		<div class="post-entry">
 			<?php get_template_part( 'loop', 'post-thumbnail' ); ?>
-			<?php the_content( __( 'Read more...', 'concerto' ) ); ?>
+			<?php the_content( __( 'Read more ...', 'nlt' ) ); ?>
 			<div class="clearfix"></div>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages: ', 'concerto' ), 'after' => '</div>', 'link_before' => '<span class="page-link-item">', 'link_after' => '</span>' ) ); ?>
+			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages: ', 'nlt' ), 'after' => '</div>', 'link_before' => '<span class="page-link-item">', 'link_after' => '</span>' ) ); ?>
 		</div><!-- .post-entry -->
 
 		<?php get_template_part( 'loop', 'post-meta-secondary' ); ?>
@@ -72,7 +70,7 @@
 
 <?php else : ?>
 
-	<?php _e( 'Sorry, no posts matched your criteria.', 'concerto' ); ?>
+	<?php _e( 'Sorry, no posts matched your criteria.', 'nlt' ); ?>
 
 <?php endif; ?>
 

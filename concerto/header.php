@@ -1,4 +1,3 @@
-<?php global $concerto_options, $concerto_options_default_data; ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -6,10 +5,7 @@
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
 	<title><?php wp_title( '&laquo;', true, 'right' ); ?></title>
-	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
 
@@ -24,10 +20,11 @@
 		<header id="header-inner" class="inner">
 
 			<hgroup>
-				<?php if( ! empty( $concerto_options['logo_url'] ) ) : ?>
-				<h1 class="site-logo"><a href="<?php echo esc_attr( home_url( '/' ) ); ?>"><img src="<?php echo $concerto_options['logo_url']; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ) . ' - ' . esc_attr( get_bloginfo( 'description' ) ); ?>" /></a></h1>
+				<?php $nlt_logo_url = nlt_opt('logo_url'); ?>
+				<?php if( ! empty( $nlt_logo_url ) ) : ?>
+				<h1 class="site-logo"><a href="<?php echo esc_attr( home_url( '/' ) ); ?>"><img src="<?php echo $nlt_logo_url; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ) . ' - ' . esc_attr( get_bloginfo( 'description' ) ); ?>" /></a></h1>
 				<?php else : ?>
-				<h1 class="site-title"><a href="<?php echo esc_attr( home_url( '/' ) ); ?>/"><?php bloginfo( 'name' ) ?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_attr( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ) ?></a></h1>
 				<h4 class="site-description"><?php bloginfo( 'description' );?></h4>
 				<?php endif; ?>
 			</hgroup>
@@ -43,9 +40,10 @@
 			<?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'primary' ) ); ?>
 
 			<div id="nav-sns">
-				<?php if( ! empty( $concerto_options['facebook_url'] ) ) : ?><a class="btn-sns btn-sns-facebook" href="<?php echo $concerto_options['facebook_url']; ?>" target="_blank">Facebook</a><?php endif; ?>
-				<?php if( ! empty( $concerto_options['twitter_url'] ) ) : ?><a class="btn-sns btn-sns-twitter" href="<?php echo $concerto_options['twitter_url']; ?>" target="_blank">Twitter</a><?php endif; ?>
-				<a class="btn-sns btn-sns-rss" href="<?php if( ! empty( $concerto_options['rss_url'] ) ) : ?><?php echo $concerto_options['rss_url']; ?><?php else : ?><?php echo get_feed_link( 'feed' ); ?><?php endif; ?>" target="_blank">RSS</a>
+				<?php $nlt_sns_fb = nlt_opt('sns_fb'); if( ! empty( $nlt_sns_fb ) ) : ?><a class="btn-sns btn-sns-fb" href="<?php echo $nlt_sns_fb; ?>" target="_blank" rel="nofollow">Facebook</a><?php endif; ?>
+				<?php $nlt_sns_tw = nlt_opt('sns_tw'); if( ! empty( $nlt_sns_tw ) ) : ?><a class="btn-sns btn-sns-tw" href="<?php echo $nlt_sns_tw; ?>" target="_blank" rel="nofollow">Twitter</a><?php endif; ?>
+				<?php $nlt_sns_wb = nlt_opt('sns_wb'); if( ! empty( $nlt_sns_wb ) ) : ?><a class="btn-sns btn-sns-wb" href="<?php echo $nlt_sns_si; ?>" target="_blank" rel="nofollow">Weibo</a><?php endif; ?>
+				<?php $nlt_sns_rs = nlt_opt('sns_rs'); ?><a class="btn-sns btn-sns-rss" href="<?php if( ! empty( $nlt_sns_rs ) ) : ?><?php echo $nlt_sns_rs; ?><?php else : ?><?php echo get_feed_link( 'feed' ); ?><?php endif; ?>" target="_blank" rel="nofollow">RSS</a>
 			</div>
 
 		</nav><!-- #nav-inner -->

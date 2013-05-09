@@ -1,6 +1,10 @@
 
 # Concerto theme CHANGELOG
 
+## version 1.0.5
+
+- NEW         Code structure optimization.
+
 ## version 1.0.4
 
 - NEW         Post formats supported basicallly.

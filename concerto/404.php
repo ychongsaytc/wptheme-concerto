@@ -1,8 +1,7 @@
-
 <?php get_header(); ?>
 
-<div class="concerto-notice-notfound">
-	<p><?php _e( 'Sorry, but you are looking for something that isn\'t here.', 'concerto' ); ?></p>
+<div class="nlt-notice-notfound">
+	<p><?php _e( 'Sorry, but you are looking for something that isn\'t here.', 'nlt' ); ?></p>
 	<?php get_search_form(); ?>
 </div>
 

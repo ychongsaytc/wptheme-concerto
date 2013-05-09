@@ -1,5 +1,5 @@
-<?php global $concerto_options; ?>
-<?php if( is_single() && get_option( 'show_avatars' ) && $concerto_options['is_display_author_info'] ) : ?>
+
+<?php if( is_single() && get_option( 'show_avatars' ) && nlt_opt('is_display_author_info') ) : ?>
 <div class="post-author-info vcard">
 	<div class="author-avatar">
 		<?php echo get_avatar( get_the_author_meta( 'user_email' ), 120 ); ?>

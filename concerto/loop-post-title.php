@@ -1,4 +1,4 @@
-<?php global $post; ?>
+
 <h2 class="post-title">
 	<?php if( is_single() || is_page() || is_attachment() ) : ?>
 		<?php the_title(); ?>

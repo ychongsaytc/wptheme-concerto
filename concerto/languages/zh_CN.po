@@ -1,22 +1,25 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WordPress Theme - Concerto 1.0.4\n"
+"Project-Id-Version: WordPress Theme - Concerto 1.0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-22 21:40+0800\n"
+"POT-Creation-Date: 2013-05-09 20:14+0800\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: YChong.com <http://www.ychong.com/>\n"
+"Last-Translator: Chong Freeman <chong@vip.163.com>\n"
+"Language-Team: Chong Freeman <http://www.ychong.com/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_html_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_html__;esc_attr_e;esc_html_e;"
+"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;"
+"_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:5
+#: 404.php:4
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "抱歉，未找到您需要的内容。"
 
@@ -32,10 +35,6 @@ msgstr "1 条评论"
 #, php-format
 msgid "%s Comments"
 msgstr "%s 条评论"
-
-#: comments.php:44
-msgid "Comments are closed."
-msgstr "评论关闭"
 
 #: comments.php:90
 msgid "question"
@@ -145,81 +144,81 @@ msgstr "评论"
 msgid "Post Comment"
 msgstr "发表评论"
 
-#: footer.php:13
+#: footer.php:12
 msgid ""
-"Powered by <a href=\"http://wordpress.org/\" title=\"WordPress\">WordPress</"
-"a>. Concerto by <a href=\"http://www.ychong.com/\" title=\"Neverland"
-"\">Neverland</a>."
+"Powered by <a href=\"http://wordpress.org/\" target=\"_blank\">WordPress</"
+"a>. Concerto Theme by <a href=\"http://www.ychong.com/\" title=\"Neverland\" "
+"target=\"_blank\">Neverland</a>."
 msgstr ""
-"<a href=\"http://wordpress.org/\" title=\"WordPress\">WordPress</a> 强力驱"
-"动. Concerto by <a href=\"http://www.ychong.com/\" title=\"Neverland"
-"\">Neverland</a>."
+"<a href=\"http://wordpress.org/\" target=\"_blank\">WordPress</a> 强力驱动. "
+"Concerto by <a href=\"http://www.ychong.com/\" title=\"Neverland\" target="
+"\"_blank\">Neverland</a>."
 
-#: functions.php:28
+#: functions.php:33
 msgid "Primary Widget Area"
 msgstr "主边栏区域"
 
-#: functions.php:30
+#: functions.php:35
 msgid "The primary widget area"
 msgstr "主要的边栏小工具区域"
 
-#: functions.php:40
+#: functions.php:45
 msgid "Primary Navigation"
 msgstr "主导航导航"
 
-#: functions.php:82
+#: functions.php:75
 #, php-format
 msgid "Page %s"
 msgstr "第 %s 页"
 
-#: index.php:10
+#: index.php:8
 #, php-format
 msgid "Category Archives: %s"
 msgstr "分类归档：%s"
 
-#: index.php:16
+#: index.php:14
 #, php-format
 msgid "Tag Archives: %s"
 msgstr "标签归档：%s"
 
-#: index.php:22
+#: index.php:20
 #, php-format
 msgid "Author Archives: %s"
 msgstr "作者归档：%s"
 
-#: index.php:24
+#: index.php:22
 #, php-format
 msgid "Search Results for: %s"
 msgstr "%s 的搜索结果"
 
-#: index.php:26
+#: index.php:24
 #, php-format
 msgid "Daily Archives: %s"
 msgstr "按日期归档：%s"
 
-#: index.php:28
+#: index.php:26
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr "按月份归档：%s"
 
-#: index.php:30
+#: index.php:28
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr "按年份归档：%s"
 
-#: index.php:32
+#: index.php:30
 msgid "Blog Archives"
 msgstr "网站存档"
 
-#: index.php:52
-msgid "Read more..."
+#: index.php:50
+msgid "Read more ..."
 msgstr "阅读全文 ……"
 
-#: index.php:54
+#: index.php:52
 msgid "Pages: "
 msgstr "页码："
 
-#: index.php:75
+#: index.php:73
 msgid "Sorry, no posts matched your criteria."
 msgstr "抱歉，没有符合条件的文章。"
 
@@ -238,7 +237,7 @@ msgid ""
 msgstr ""
 "<strong>声明：</strong>本文采用 <a href=\"http://creativecommons.org/"
 "licenses/by-nc-sa/3.0/\" rel=\"nofollow external\"><abbr title=\"署名-非商业"
-"性使用-相同方式共享\">BY-NC-SA</abbr></a> 协议进行授权，本文链接：%s"
+"性使用-相同方式共享\">BY-NC-SA</abbr></a> 协议进行授权，本文链接：%s。"
 
 #: loop-post-meta-primary.php:4
 #, php-format
@@ -289,170 +288,184 @@ msgstr "%link"
 msgid "Search"
 msgstr "搜索"
 
-#: sidebar.php:8
+#: sidebar.php:7
 msgid "Recent Posts"
 msgstr "近期文章"
 
-#: sidebar.php:21
+#: sidebar.php:20
 msgid "Categories"
 msgstr "分类目录"
 
-#: sidebar.php:28
+#: sidebar.php:27
 msgid "Tag Cloud"
 msgstr "标签云"
 
-#: sidebar.php:35
+#: sidebar.php:34
 msgid "Archives"
 msgstr "文章归档"
 
-#: includes/concerto.options.php:7
+#: includes/nlt.options.php:8
 msgid "Sidebar Position: Homepage"
 msgstr "边栏位置：首页"
 
-#: includes/concerto.options.php:9 includes/concerto.options.php:16
-#: includes/concerto.options.php:23
+#: includes/nlt.options.php:10 includes/nlt.options.php:17
+#: includes/nlt.options.php:24
 msgid "On the left"
 msgstr "左边"
 
-#: includes/concerto.options.php:9 includes/concerto.options.php:16
-#: includes/concerto.options.php:23
+#: includes/nlt.options.php:10 includes/nlt.options.php:17
+#: includes/nlt.options.php:24
 msgid "On the right"
 msgstr "右边"
 
-#: includes/concerto.options.php:9 includes/concerto.options.php:16
-#: includes/concerto.options.php:23
+#: includes/nlt.options.php:10 includes/nlt.options.php:17
+#: includes/nlt.options.php:24
 msgid "Hide sidebar (wide column)"
 msgstr "隐藏边栏（全宽度内容）"
 
-#: includes/concerto.options.php:10
+#: includes/nlt.options.php:11
 msgid "Select where your sidebar will be in homepage."
 msgstr "选择您网站首页的边栏所在的位置。"
 
-#: includes/concerto.options.php:14
+#: includes/nlt.options.php:15
 msgid "Sidebar Position: Archives"
 msgstr "边栏位置：归档"
 
-#: includes/concerto.options.php:17
+#: includes/nlt.options.php:18
 msgid "Select where your sidebar will be in archives page."
 msgstr "选择您网站归档的边栏所在的位置。"
 
-#: includes/concerto.options.php:21
+#: includes/nlt.options.php:22
 msgid "Sidebar Position: Single Post"
 msgstr "边栏位置：单篇文章"
 
-#: includes/concerto.options.php:24
+#: includes/nlt.options.php:25
 msgid "Select where your sidebar will be in single post and standard pages."
 msgstr "选择您网站文章和标准页面的边栏所在的位置。"
 
-#: includes/concerto.options.php:28
+#: includes/nlt.options.php:29
 msgid "Logo URL"
 msgstr "Logo 地址"
 
-#: includes/concerto.options.php:30
+#: includes/nlt.options.php:31
 msgid ""
 "Put your website logo URL here. (leave it blank for displaying site name and "
 "site description.)"
 msgstr ""
 "请在此输入您的完整的网站 Logo 网址。（留空将只显示网站名称和网站描述。）"
 
-#: includes/concerto.options.php:34
+#: includes/nlt.options.php:35
 msgid "Multi-level Menu Effect"
 msgstr "多级导航菜单效果"
 
-#: includes/concerto.options.php:36
+#: includes/nlt.options.php:37
 msgid "None"
 msgstr "无"
 
-#: includes/concerto.options.php:36
+#: includes/nlt.options.php:37
 msgid "Fade"
 msgstr "淡入淡出"
 
-#: includes/concerto.options.php:36
+#: includes/nlt.options.php:37
 msgid "Slide"
 msgstr "滑动"
 
-#: includes/concerto.options.php:36
+#: includes/nlt.options.php:37
 msgid "Flexible"
 msgstr "伸缩"
 
-#: includes/concerto.options.php:37
+#: includes/nlt.options.php:38
 msgid "Select the effect of multi-level navigation menu."
 msgstr "选择网页多级导航菜单的效果。"
 
-#: includes/concerto.options.php:41
+#: includes/nlt.options.php:42
 msgid "Homepage menu item in navigation menu"
 msgstr "导航栏菜单首页链接"
 
-#: includes/concerto.options.php:43
+#: includes/nlt.options.php:44
 msgid "Display homepage menu item"
 msgstr "显示导航栏首页链接"
 
-#: includes/concerto.options.php:44
+#: includes/nlt.options.php:45
 msgid ""
 "Enabling this will display the index page menu item in the header navigation "
 "menu."
 msgstr "勾选此项将在导航栏菜单中显示首页链接。"
 
-#: includes/concerto.options.php:48
+#: includes/nlt.options.php:49
+msgid "Post Thumbnail"
+msgstr "文章缩略图"
+
+#: includes/nlt.options.php:51
+msgid "Display post thumbnail image"
+msgstr "显示文章缩略图"
+
+#: includes/nlt.options.php:52
+msgid ""
+"Enabling this will display thumbnail images in a single post page and post "
+"archives page."
+msgstr "勾选此项将在单篇文章和文章归档中显示文章缩略图。"
+
+#: includes/nlt.options.php:56
 msgid "Author Information"
 msgstr "作者信息"
 
-#: includes/concerto.options.php:50
+#: includes/nlt.options.php:58
 msgid "Display author information"
 msgstr "显示作者信息"
 
-#: includes/concerto.options.php:51
+#: includes/nlt.options.php:59
 msgid ""
 "Enabling this will display your author information in a single post page. "
 "(avatars visibility required)"
 msgstr "勾选此项将在单篇文章中显示您的作者信息。（必须开启头像显示功能）"
 
-#: includes/concerto.options.php:55
+#: includes/nlt.options.php:63
 msgid "BY-NC-SA License Notice"
 msgstr "BY-NC-SA 协议声明"
 
-#: includes/concerto.options.php:57
+#: includes/nlt.options.php:65
 msgid "Display BY-NC-SA license notice"
 msgstr "显示 BY-NC-SA 协议声明"
 
-#: includes/concerto.options.php:58
+#: includes/nlt.options.php:66
 msgid ""
 "Enabling this will display the BY-NC-SA License Notice in a singular page."
 msgstr "勾选此项将在单篇文章或单篇页面中显示 BY-NC-SA 协议声明。"
 
-#: includes/concerto.options.php:62
+#: includes/nlt.options.php:70
 msgid "Post meta in pages"
 msgstr "页面的元信息"
 
-#: includes/concerto.options.php:64
+#: includes/nlt.options.php:72
 msgid "Display post meta-information in pages"
 msgstr "显示单独页面的文章元信息"
 
-#: includes/concerto.options.php:65
+#: includes/nlt.options.php:73
 msgid ""
 "Enabling this will display the post meta-information under the post title in "
 "pages."
 msgstr "勾选此项将在普通页面中显示文章的元信息（在标题下方）。"
 
-#: includes/concerto.options.php:69
+#: includes/nlt.options.php:77
 msgid "Posts navigation links in single posts"
 msgstr "单文章页导航链接"
 
-#: includes/concerto.options.php:71
+#: includes/nlt.options.php:79
 msgid "Display posts navigation in single posts"
 msgstr "显示单文章页的导航链接"
 
-#: includes/concerto.options.php:72
+#: includes/nlt.options.php:80
 msgid ""
 "Enabling this will display the posts navigation links (previous and next "
 "post) in a single post."
 msgstr "勾选此项将在单篇文章中显示导航链接（上一篇、下一篇）。"
 
-#: includes/concerto.options.php:76
+#: includes/nlt.options.php:84
 msgid "RSS URL"
 msgstr "RSS 地址"
 
-#: includes/concerto.options.php:78
+#: includes/nlt.options.php:86
 msgid ""
 "Put your full RSS subscribe URL here. (with http://, leave it blank for "
 "displaying the standard URL.)"
@@ -460,11 +473,11 @@ msgstr ""
 "请在此处输入您的完整的 RSS 订阅网址。（包含 http://，留空将显示默认的 RSS 链"
 "接。）"
 
-#: includes/concerto.options.php:82
+#: includes/nlt.options.php:90
 msgid "Twitter URL"
 msgstr "Twitter 地址"
 
-#: includes/concerto.options.php:84
+#: includes/nlt.options.php:92
 msgid ""
 "Put your full Twitter URL here. (with http://, leave it blank for displaying "
 "none.)"
@@ -472,11 +485,11 @@ msgstr ""
 "请在此处输入您的完整的 Twitter 主页网址。（包含 http://，留空将不显示此链"
 "接。）"
 
-#: includes/concerto.options.php:88
+#: includes/nlt.options.php:96
 msgid "Facebook URL"
 msgstr "Facebook 地址"
 
-#: includes/concerto.options.php:90
+#: includes/nlt.options.php:98
 msgid ""
 "Put your full Facebook URL here. (with http://, leave it blank for "
 "displaying none.)"
@@ -484,45 +497,59 @@ msgstr ""
 "请在此处输入您的完整的 Facebook 主页网址。（包含 http://，留空将不显示此链"
 "接。）"
 
-#: includes/concerto.options.php:94
+#: includes/nlt.options.php:102
+msgid "Sina WeiBo URL"
+msgstr "新浪微博地址"
+
+#: includes/nlt.options.php:104
+msgid ""
+"Put your full Sina WeiBo URL here. (with http://, leave it blank for "
+"displaying none.)"
+msgstr ""
+"请在此处输入您的完整的新浪微博网址。（包含 http://，留空将不显示此链接。）"
+
+#: includes/nlt.options.php:108
 msgid "Custom Website Info String"
 msgstr "自定义网站信息文字"
 
-#: includes/concerto.options.php:96
+#: includes/nlt.options.php:110
 msgid "Some HTML code replaced the footer's website information."
 msgstr "一些被置于网站底部用于替换网站信息的 HTML 代码。"
 
-#: includes/concerto.options.php:121 includes/concerto.options.php:166
+#: includes/nlt.options.php:172 includes/nlt.options.php:190
 msgid "Theme Options"
 msgstr "主题选项"
 
-#: includes/concerto.options.php:169
+#: includes/nlt.options.php:193
 msgid "Options saved."
 msgstr "设置已保存。"
 
-#: includes/concerto.options.php:201
+#: includes/nlt.options.php:225
 msgid "Save Changes"
 msgstr "保存更改"
 
-#: includes/concerto.widgets.php:6
-msgid "Concerto Random Posts Widget"
-msgstr "Concerto 随机文章小工具"
+#: includes/nlt.widgets.php:7
+msgid "Neverland Random Posts Widget"
+msgstr "Neverland 随机文章小工具"
 
-#: includes/concerto.widgets.php:6
+#: includes/nlt.widgets.php:7
 msgid "A widget for displaying random posts."
 msgstr "用于显示随机文章的小工具。"
 
-#: includes/concerto.widgets.php:12
+#: includes/nlt.widgets.php:13
 msgid "Random Posts"
 msgstr "随机文章"
 
-#: includes/concerto.widgets.php:35
+#: includes/nlt.widgets.php:36
 msgid "Title: "
 msgstr "标题："
 
-#: includes/concerto.widgets.php:36
+#: includes/nlt.widgets.php:37
 msgid "Number of posts to show: "
 msgstr "显示文章数："
+
+#~ msgid "Comments are closed."
+#~ msgstr "评论关闭"
 
 #~ msgid "Archives of %s"
 #~ msgstr "%s 的归档"

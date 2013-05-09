@@ -1,14 +1,15 @@
 /*
-Theme Name:Concerto
-Theme URI:http://www.ychong.com/works/wptheme-concerto/
-Description:A pure white WordPress theme, valid HTML 5 and CSS 3, theme options and widgets supported. Custom site logo, navigation menu, footer string (HTML), Twitter and Facebook links. You can set the sidebar on the left, on the right, or hide the sidebar. Multi-level navigation menu with selective effects and random posts widget supported. The "Author Information" box (inspired by TwentyTen) and "BY-NC-SA License Notice" are available in single post page. Also included full width page template and links listing shortcode. Supports Right to Left Languages and many plugins.
-Tags:white, light, theme-options, custom-menu, left-sidebar, right-sidebar, one-column, two-columns, post-formats, full-width-template, fixed-width, sticky-post
-Text Domain: concerto
-Version:1.0.4
-Author:YChong
-Author URI:http://www.ychong.com/
-License:GNU General Public License, version 2
-License URI:http://www.gnu.org/licenses/gpl-2.0.html
+Theme Name: Concerto
+Theme URI: http://www.ychong.com/works/wptheme-concerto/
+Version: 1.0.5
+Author: YChong
+Author URI: http://www.ychong.com/
+Description: A pure white WordPress theme, valid HTML 5 and CSS 3, theme options and widgets supported. Custom site logo, navigation menu, footer string (HTML), Twitter and Facebook links. You can set the sidebar on the left, on the right, or hide the sidebar. Multi-level navigation menu with selective effects and random posts widget supported. The "Author Information" box (inspired by TwentyTen) and "BY-NC-SA License Notice" are available in single post page. Also included full width page template and links listing shortcode. Supports Right to Left Languages and many plugins.
+Tags: white, light, theme-options, custom-menu, left-sidebar, right-sidebar, one-column, two-columns, post-formats, full-width-template, fixed-width, sticky-post
+Text Domain: nlt
+
+License: GNU General Public License, version 2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -28,9 +29,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+	margin: 0; padding: 0; border: 0;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -218,12 +217,14 @@ a:hover, a:focus, a:active { text-decoration: none; color: #666; }
 
 #nav-sns { display: inline-block; }
 #nav-sns .btn-sns { display: inline-block; height: 18px; line-height: 18px; padding: 0 20px 0 25px; margin: 7px 0; background: url('images/icon-sns.gif') no-repeat transparent; text-align: left; }
-#nav-sns .btn-sns-rss { background-position: 0px 0px; }
-#nav-sns .btn-sns-rss:hover { background-position: 0px -18px; }
-#nav-sns .btn-sns-facebook { background-position: 0px -36px; }
-#nav-sns .btn-sns-facebook:hover { background-position: 0px -54px; }
-#nav-sns .btn-sns-twitter { background-position: 0px -72px; }
-#nav-sns .btn-sns-twitter:hover { background-position: 0px -90px; }
+#nav-sns .btn-sns-rs { background-position: 0px 0px; }
+#nav-sns .btn-sns-rs:hover { background-position: 0px -18px; }
+#nav-sns .btn-sns-fb { background-position: 0px -36px; }
+#nav-sns .btn-sns-fb:hover { background-position: 0px -54px; }
+#nav-sns .btn-sns-tw { background-position: 0px -72px; }
+#nav-sns .btn-sns-tw:hover { background-position: 0px -90px; }
+#nav-sns .btn-sns-wb { background-position: 0px -108px; }
+#nav-sns .btn-sns-wb:hover { background-position: 0px -126px; }
 
 /* ===== Comments ===== */
 
@@ -292,12 +293,12 @@ textarea {
 #searchform .screen-reader-text { display: none; }
 small { font-size: smaller; }
 
-.concerto-box { padding: 0 !important; }
-.concerto-box li { padding: 0; list-style: none; clear: both; }
-.concerto-box-title, h3.concerto-box-title { display: block; padding: 0 10px; margin-bottom: 5px; line-height: 26px; font-size: 12px; font-weight: bold; color: #333; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background-color: #eee; }
-.concerto-box li ul li { float: left; clear: none; list-style: none; padding: 0 10px; width: 145px; line-height: 26px; }
+.nlt-box { padding: 0 !important; }
+.nlt-box li { padding: 0; list-style: none; clear: both; }
+.nlt-box-title, h3.nlt-box-title { display: block; padding: 0 10px; margin-bottom: 5px; line-height: 26px; font-size: 12px; font-weight: bold; color: #333; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background-color: #eee; }
+.nlt-box li ul li { float: left; clear: none; list-style: none; padding: 0 10px; width: 145px; line-height: 26px; }
 
-.concerto-notice-notfound { width: 480px; height: 100px; margin: 100px auto; padding-left: 130px; line-height: 50px; background: transparent url('images/icon-notfound.png') left center no-repeat; font-size: 18px; }
+.nlt-notice-notfound { width: 480px; height: 100px; margin: 100px auto; padding-left: 130px; line-height: 50px; background: transparent url('images/icon-notfound.png') left center no-repeat; font-size: 18px; }
 
 /* ===== WordPress Elements (required) ===== */
 
